@@ -34,7 +34,7 @@ try:
 except AttributeError:
     MARKDOWN_MAJOR = markdown.version_info[0]
 
-WIKILINK_PLUS_RE = r'\[\[\s*(?P<target>[^][|]+?)(\s*\|\s*(?P<label>[^][]+))?\s*\]\]'
+WIKILINK_PLUS_RE = r'!?\[\[\s*(?P<target>[^][|]+?)(\s*\|\s*(?P<label>[^][]+))?\s*\]\]'
 
 def build_url(urlo, base, end, url_whitespace, url_case):
     """ Build and return a valid url.
